@@ -16,7 +16,10 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <fcntl.h>
-# define BUFFER_SIZE 42
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 int		ft_strlen(char *s);
 char	*get_next_line(int fd);
