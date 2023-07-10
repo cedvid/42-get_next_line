@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "get_next_line.h"
 
-char	*next_line(char *str)
+char	*extract_line(char *str)
 {
 	int		i;
 	char	*buf;
@@ -38,7 +38,7 @@ char	*next_line(char *str)
 	return (buf);
 }
 
-char	*remove_first_line(char *str)
+char	*get_remainder(char *str)
 {
 	char	*buf;
 	int		i;
@@ -102,8 +102,8 @@ char	*get_next_line(int fd)
 	input_str = read_file(fd, input_str, buf);
 	if (!input_str)
 		return (NULL);
-	buf = next_line(input_str);
-	input_str = remove_first_line(input_str);
+	buf = extract_line(input_str);
+	input_str = get_remainder(input_str);
 	return (buf);
 }
 
