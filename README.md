@@ -1,4 +1,5 @@
-# GET_NEXT_LINE - 42 Project
+# get_next_line - 42 Project
+![grade](https://github.com/cedvid/get_next_line/blob/main/img/grade.png?raw=true)
 
 The "get_next_line" project involves implementing a function that takes a file descriptor as an argument and reads from it, returning the next line each time it is called. By completing this project, I gained practical experience in file input/output operations, memory management using buffers, error handling, and algorithmic thinking for efficient line reading.
 
